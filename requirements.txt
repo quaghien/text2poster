@@ -1,0 +1,14 @@
+diffusers
+transformers
+ctransformers
+wandb
+accelerate
+huggingface_hub
+googletrans==3.1.0a0
+pandas
+sentence-transformers
+omegaconf
+open_clip_torch
+clip-interrogator
+yacs
+underthesea
