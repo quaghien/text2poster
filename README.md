@@ -4,7 +4,7 @@ A model capable of generating product advertising banners automatically, based o
 ## Quick Start
 Clone this project and install the required packages:
 ```
-    git clone https://github.com/QuagHien/AdvertisingBanner-Generation.git
+    git clone https://github.com/QuagHien/advertisingbanner-generation.git
     pip install -r requirements.txt
 ```
 ## Data preparation
