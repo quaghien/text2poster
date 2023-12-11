@@ -27,12 +27,10 @@ Translation data to English:
     bash run/translation.sh
 ```
 # Method: Inference from pretrained Stable Diffusion model
-## Solution
-My team's solution is to use images in the training set as condition images to 
-
+## Solution  
 *   My team's solution is to use images in the training set as condition images to support image generation for the stable diffusion model. To retrieve images from the training set, we uses a pretrained model to extract embedding and then calculates cosine similarity to find the closest image to support image generation on the test set.
 *   From our experiment, [Realistic Vision](https://civitai.com/models/4201/realistic-vision-v51) version of Stable Diffusion 1.5 can produce best realistic result.
-## Step to reproduce result
+## Step to reproduce result  
 Perform generation to reproduce the result, the output image will be at "output/images" directory:
 ```
     bash run/inference.sh
