@@ -1,4 +1,4 @@
-## Advertisement Banner Generation - Zalo AI Challenge 2023
+##  Advertisement Banner Generation - Zalo AI Challenge 2023
 The model achieved a score of **0.39565** from Zalo AI Benchmark, ranking **13th** among participating teams.  
 A model capable of generating product advertising banners automatically, based on provided product descriptions.The goal is to produce creative and engaging banners that closely resemble human-created templates.
 ## Quick Start
