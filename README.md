@@ -1,9 +1,10 @@
 # Advertisement-Banner-Generation-ZaloAI23
-Inference from pretrained Stable Diffusion model
+The model achieved a score of **0.39565** from Zalo AI Benchmark, ranking **13th** among participating teams.  
+A model capable of generating product advertising banners automatically, based on provided product descriptions. The goal is to produce creative and engaging banners that closely resemble human-created templates.
 ## Quick Start
 Clone this project and install the required packages:
 ```
-    git clone https://github.com/QuagHien/BannerGeneration-ZaloAI23.git
+    git clone https://github.com/QuagHien/AdvertisingBanner-Generation.git
     pip install -r requirements.txt
 ```
 ## Data preparation
@@ -27,11 +28,11 @@ Translation data to English:
 ```
 # Method: Inference from pretrained Stable Diffusion model
 ## Solution
-Our team's solution is to use images in the training set as condition images to 
+My team's solution is to use images in the training set as condition images to 
 
-*   support image generation for the stable diffusion model. To retrieve images from the training set, we uses a pretrained model to extract embedding and then calculates cosine similarity to find the closest image to support image generation on the test set.
-*   From our experiment, Realistic Vision version of Stable Diffusion 1.5 can produce best realistic result.
-##Step to reproduce result
+*   My team's solution is to use images in the training set as condition images to support image generation for the stable diffusion model. To retrieve images from the training set, we uses a pretrained model to extract embedding and then calculates cosine similarity to find the closest image to support image generation on the test set.
+*   From our experiment, [Realistic Vision](https://civitai.com/models/4201/realistic-vision-v51) version of Stable Diffusion 1.5 can produce best realistic result.
+## Step to reproduce result
 Perform generation to reproduce the result, the output image will be at "output/images" directory:
 ```
     bash run/inference.sh
