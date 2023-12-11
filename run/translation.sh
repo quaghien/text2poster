@@ -1,1 +1,1 @@
-python3 preprocessing/translate_data.py 
+python3 advertisingbanner-generation/preprocessing/translate_data.py 
