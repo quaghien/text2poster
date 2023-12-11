@@ -10,16 +10,16 @@ Clone this project and install the required packages:
 ## Data preparation
 Organize dataset folder as follows:
   ```
-    |- data/
-        |- train/
-            |- images/
-            |- info.csv
-            |- info_trans.csv # Translated train data
-            |- ...
-        |- test/
-            |- info.csv
-            |- info_trans.csv # Translated test data
-            |- ...
+  |- data/
+      |- train/
+          |- images/
+          |- info.csv
+          |- info_trans.csv # Translated train data
+          |- ...
+      |- test/
+          |- info.csv
+          |- info_trans.csv # Translated test data
+          |- ...
   ```
 ## Data preprocessing
 Translation data to English:
