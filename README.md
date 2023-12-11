@@ -19,7 +19,8 @@ Organize dataset folder as follows:
       |- test/
           |- info.csv
           |- info_trans.csv # Translated test data
-          |- ...  
+          |- ...
+
 #example data:
 #gdown 1mFhnTOCFiMwsVGXOxwpQP3m5pWYHSn9P
 #unzip data.zip
