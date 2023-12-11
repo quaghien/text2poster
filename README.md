@@ -5,7 +5,7 @@ A model capable of generating product advertising banners automatically, based o
 Clone this project and install the required packages:
 ```
     git clone https://github.com/QuagHien/advertisingbanner-generation.git
-    pip install -r requirements.txt
+    pip install -r advertisingbanner-generation/requirements.txt
 ```
 ## Data preparation
 Organize dataset folder as follows:
@@ -24,7 +24,7 @@ Organize dataset folder as follows:
 ## Data preprocessing
 Translation data to English:
 ```
-    bash run/translation.sh
+    bash advertisingbanner-generation/run/translation.sh
 ```
 # Method: Inference from pretrained Stable Diffusion model
 ## Solution  
@@ -33,7 +33,7 @@ Translation data to English:
 ## Step to reproduce result  
 Perform generation to reproduce the result, the output image will be at "output/images" directory:
 ```
-    bash run/inference.sh
+    bash advertisingbanner-generation/run/inference.sh
 ```
 ## Limitation
 
