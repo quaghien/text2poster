@@ -8,7 +8,7 @@ git clone https://github.com/QuagHien/advertisingbanner-generation.git
 pip install -r advertisingbanner-generation/requirements.txt
 ```
 ## Data preparation
-Organize dataset folder as follows:
+Organize data folder as follows:
   ```
   |- data/
       |- train/
