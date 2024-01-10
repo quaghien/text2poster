@@ -10,6 +10,7 @@ import torch.nn.functional as F
 from sentence_transformers import SentenceTransformer
 from diffusers import AutoPipelineForImage2Image, AutoencoderKL, DPMSolverMultistepScheduler
 from diffusers.utils import load_image
+import shutil
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Inference script")
@@ -112,6 +113,10 @@ def main():
         for image, save_path in zip(images, save_paths):
             image = image.resize((1024, 533))
             image.save(save_path)
+
+    folder_path = "inference/method_1/"
+    zip_file_path = "inference/output"
+    shutil.make_archive(zip_file_path, 'zip', folder_path)
 
 if __name__ == "__main__":
     main()
