@@ -30,8 +30,8 @@ class Translation():
 if __name__ == '__main__':
     translator = Translation()
 
-    train_data = pd.read_csv("./data/train/info.csv")
-    test_data = pd.read_csv("./data/test/info.csv")
+    train_data = pd.read_csv("./data/train/info_trans.csv")
+    test_data = pd.read_csv("./data/test/info_trains.csv")
 
     for i in tqdm(range(len(train_data))):
         train_data.loc[i, "caption"] = translator(str(train_data.loc[i, "caption"]))
@@ -43,5 +43,5 @@ if __name__ == '__main__':
         test_data.loc[i, "description"] = translator(str(test_data.loc[i, "description"]))
         test_data.loc[i, "moreInfo"] = translator(str(test_data.loc[i, "moreInfo"]))
     
-    train_data.to_csv('./data/train/info_trans.csv')
-    test_data.to_csv('./data/test/info_trans.csv')
+    train_data.to_csv('./data/train/info.csv')
+    test_data.to_csv('./data/test/info.csv')
