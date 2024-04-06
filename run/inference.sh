@@ -1,1 +1,1 @@
-python3 advertisingbanner-generation/tools/inference.py --output_dir inference/method_1
+python3 tools/inference.py --output_dir inference/method_1
