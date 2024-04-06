@@ -1,4 +1,4 @@
-diffusers
+diffusers==0.26.0
 transformers
 ctransformers
 wandb
