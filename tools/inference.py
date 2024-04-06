@@ -30,14 +30,13 @@ def parse_args():
 def load_data():
     test_data = pd.read_csv("./data/test/info.csv")
     train_data = pd.read_csv("./data/train/info.csv")
-    test_data_trans = pd.read_csv("./data/test/info_trans.csv")
 
-    return test_data, train_data, test_data_trans
+    return test_data, train_data
 
 def main():
     args = parse_args()
     sim_model = SentenceTransformer('bkai-foundation-models/vietnamese-bi-encoder')
-    test_data, train_data, test_data_trans = load_data()
+    test_data, train_data = load_data()
 
     # Load captions
     test_captions = []
