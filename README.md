@@ -1,4 +1,4 @@
-##  Advertising Banner Generation with Stable Diffusion
+##  Advertising Banner Generation
 A model capable of generating product advertising banners automatically, based on provided product descriptions.The goal is to produce creative and engaging banners that closely resemble human-created templates.
 ## Quick Start
 Clone this project and install the required packages:
