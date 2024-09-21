@@ -30,7 +30,7 @@ python3 text2poster/src/preprocessing/translate_data.py
 ## Method: Stable Diffusion && Laying Out Stylized Texts
 *   Step 1: Fine-tune UNet in Stable Diffusion
 
-  In the first step I fine-tune UNet in the stabilityai/stable-diffusion-2-1 model with our self-collected poster background image dataset.
+  In the first step, I fine-tune UNet in the stabilityai/stable-diffusion-2-1 model with a dataset of 50.000 poster images that we collected ourselves.
 
   Code : text2poster/src/fine-tune/fine-tune_Unet-stable-diffusion.ipynb
 *   Step 2: Laying Out Stylized Texts
