@@ -4,7 +4,6 @@ ctransformers
 wandb
 accelerate
 huggingface_hub
-googletrans==3.1.0a0
 pandas
 sentence-transformers
 yacs

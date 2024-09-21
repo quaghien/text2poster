@@ -1,11 +1,13 @@
 ##  Advertising Banner Generation
-A model capable of generating product advertising banners automatically, based on provided product descriptions.The goal is to produce creative and engaging banners that closely resemble human-created templates.
+A model capable of generating product advertising poster automatically, based on provided product descriptions.The goal is to produce creative poster that closely resemble human-created templates.
 ## Quick Start
-Clone this project and install the required packages:
+Clone this project and run inference:
 ```
-git clone https://github.com/QuagHien/advertisingbanner-generation.git
-pip install -r advertisingbanner-generation/requirements.txt
+git clone https://github.com/QuagHien/text2poster.git
 ```
+
+Run code: text2poster/src/inference/gen_poster.ipynb
+
 ## Data preparation
 Organize data folder as follows:
   ```
@@ -13,12 +15,8 @@ Organize data folder as follows:
       |- train/
           |- images/
           |- info.csv
-          |- info_trans.csv # Translated train data
-          |- ...
       |- test/
           |- info.csv
-          |- info_trans.csv # Translated test data
-          |- ...
 
 #example data:
 #gdown 1mFhnTOCFiMwsVGXOxwpQP3m5pWYHSn9P
@@ -27,18 +25,16 @@ Organize data folder as follows:
 ## Data preprocessing
 Translation data to English:
 ```
-bash advertisingbanner-generation/run/translation.sh
+bash text2poster/run/translation.sh
 ```
-# Method: Inference from pretrained Stable Diffusion model
-## Solution  
-*   My team's solution is to use images in the training set as condition images to support image generation for the stable diffusion model. To retrieve images from the training set, we uses a pretrained model to extract embedding and then calculates cosine similarity to find the closest image to support image generation on the test set.
-*   From our experiment, [Realistic Vision](https://civitai.com/models/4201/realistic-vision-v51) version of Stable Diffusion 5.1 can produce best realistic result.
-## Step to reproduce result  
-Perform generation to reproduce the result, the output image will be at "output/images" directory:
-```
-bash advertisingbanner-generation/run/inference.sh
-```
-## Limitation
+## Method: Stable Diffusion && Laying Out Stylized Texts
+*   Step 1: Fine-tune UNet in Stable Diffusion
 
-*    For this solution, our team can not achieve higher score than 0.39565 from Zalo AI Benchmark.
-*    With the duplication score, this method failed with dulplication score up to 0.89360.
+  In the first step I fine-tune UNet in the stabilityai/stable-diffusion-2-1 model with our self-collected poster background image dataset.
+
+  Code : text2poster/src/fine-tune/fine-tune_Unet-stable-diffusion.ipynb
+*   Step 2: Laying Out Stylized Texts
+
+## Architecture
+
+## Results
