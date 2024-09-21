@@ -37,6 +37,7 @@ python3 text2poster/src/preprocessing/translate_data.py
 
 ## Architecture
 <img src="https://github.com/QuagHien/text2poster/blob/master/images/architecture.png" alt="method" />
+
 ## Results
 <img src="https://github.com/QuagHien/text2poster/blob/master/images/qc1.jpg" alt="qc1" />
 <img src="https://github.com/QuagHien/text2poster/blob/master/images/qc2.jpg" alt="qc2" />
