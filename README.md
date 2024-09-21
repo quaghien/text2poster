@@ -33,11 +33,8 @@ Organize data folder as follows:
 #example data:
 #gdown 1mFhnTOCFiMwsVGXOxwpQP3m5pWYHSn9P
 #unzip data.zip
-  ```
-## Data preprocessing
-Translation data to English:
-```
-python3 text2poster/src/preprocessing/translate_data.py
+#Translation data to English:
+#python3 text2poster/src/preprocessing/translate_data.py
 ```
 
 ## Results
