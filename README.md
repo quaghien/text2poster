@@ -25,7 +25,7 @@ Organize data folder as follows:
 ## Data preprocessing
 Translation data to English:
 ```
-bash text2poster/run/translation.sh
+python3 text2poster/src/preprocessing/translate_data.py
 ```
 ## Method: Stable Diffusion && Laying Out Stylized Texts
 *   Step 1: Fine-tune UNet in Stable Diffusion
@@ -36,5 +36,10 @@ bash text2poster/run/translation.sh
 *   Step 2: Laying Out Stylized Texts
 
 ## Architecture
-
+<img src="https://github.com/QuagHien/text2poster/blob/master/images/architecture.png" alt="method" width="638" height="456" />
 ## Results
+<img src="https://github.com/QuagHien/text2poster/blob/master/images/qc1.jpg" alt="qc1" width="638" height="456" />
+<img src="https://github.com/QuagHien/text2poster/blob/master/images/qc2.jpg" alt="qc2" width="638" height="456" />
+<img src="https://github.com/QuagHien/text2poster/blob/master/images/qc3.jpg" alt="qc3" width="638" height="456" />
+
+
