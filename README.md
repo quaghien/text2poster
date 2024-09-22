@@ -1,4 +1,4 @@
-##  Advertising Banner Generation
+##  Advertising Poster Generation
 A model capable of generating product advertising poster automatically, based on provided product descriptions.The goal is to produce creative poster that closely resemble human-created templates.
 
 ## Method: Stable Diffusion && Laying Out Stylized Texts
